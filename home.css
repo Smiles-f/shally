@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100;
+    height: 100vh;
+    background: black;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vh;
+    gap: 120px;
+    padding: 30%;
+}
+#discord,
+#twitter,
+#guthub{
+    font-size: 300px;
+    color: #fff;
+    animation: animate 4s linear infinite;
+    text-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff,0 0 150px #0072ff,
+    0 0 200px #0072ff;
+    justify-content: center;
+}
+#discord { 
+    animation-delay: 0.3s;
+}
+#twitter {
+    animation-delay: 0.5s;
+}
+#github{
+    animation-delay: 0.2s;
+}
+@keyframes animate {
+    from {
+        filter: hue-rotate(0deg);
+}
+to{
+    filter: hue-rotate(369deg);
+}
+}
